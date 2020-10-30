@@ -95,8 +95,8 @@
         };
       };
 
-      //YOUR TURN: add your Mapbox access token 
-      mapboxgl.accessToken = 'TOKEN';
+      // URL-restricted token for https://domlet.github.io/sheet-mapper-adv-demo only:
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZG9tYm94IiwiYSI6ImNrZ3ZyNzJ5OTAzMTMycXF0em1sbGN2ZzYifQ.hHpJtsQiSJFCSvvEe0rQOQ';
       var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', //YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
@@ -112,7 +112,7 @@
 
       // Initialize D3 to access your table
       function init() {
-        d3.csv('<Link to your shared spreadsheet goes here!>', addPoints);
+        d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vREP-dW_2JPBar5tT59tvPlbKCq2bUTHFRlYHSVWUYsZ8gHuqlBHRW2TuUDHaeT7JMJAMmnoncuIrtS/pubhtml', addPoints);
       }
 
 
